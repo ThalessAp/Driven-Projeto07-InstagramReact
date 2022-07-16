@@ -1,3 +1,5 @@
+import {IoChevronForwardCircleOutline} from 'react-icons/io5';
+
 const storys = [
 	{
 		image: "./assets/img/meowed.svg",
@@ -38,7 +40,7 @@ export default function Stories() {
 				))}
 
 				<div class="setinha">
-					{/* TODO: achar o icone da setinha la */}
+					<IoChevronForwardCircleOutline />
 				</div>
 			</div>
 		</>

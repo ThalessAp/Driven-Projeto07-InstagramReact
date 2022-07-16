@@ -1,4 +1,10 @@
-import { IoLogoInstagram, IoMdPaperPlane, IoIosCompass, IoIosHeart, IoIosPerson,  } from "react-icons/io";
+import {
+	IoLogoInstagram,
+	IoPaperPlaneOutline,
+	IoCompassOutline,
+	IoHeartOutline,
+	IoPersonOutline,
+} from "react-icons/io5";
 
 export default function Navbar(){
     return(
@@ -37,14 +43,14 @@ function Searchbar(){
 }
 
 function Icons(){
-  return(
-    <>
-      <div class="icones">
-        <IoMdPaperPlane />
-        <IoIosCompass />
-        <IoIosHeart />
-        <IoIosPerson />
-      </div>      
-    </>
-  )
+  return (
+		<>
+			<div class="icones">
+				<IoPaperPlaneOutline />
+				<IoCompassOutline />
+				<IoHeartOutline />
+				<IoPersonOutline />
+			</div>
+		</>
+  );
 }

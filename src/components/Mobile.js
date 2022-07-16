@@ -1,4 +1,4 @@
-import { IoLogoInstagram, IoMdPaperPlane } from "react-icons/io";
+import { IoLogoInstagram, IoPaperPlaneOutline } from "react-icons/io";
 
 export default function Mobile() {
 	return (
@@ -22,7 +22,7 @@ function Logo() {
 			</div>
 
 			<div class="icones-mobile">
-				<IoMdPaperPlane />
+				<IoPaperPlaneOutline />
 			</div>
 		</>
 	);

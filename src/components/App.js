@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Stories from "./Stories";
-import Posts from "./Posts";
+import Feed from "./Feed";
 //import Sidebar from "./Sidebar";
 import Mobile from "./Mobile";
 
@@ -11,7 +11,7 @@ function App(){
             <Navbar />
             <div class="corpo">
                 <Stories />
-                <Posts />
+                <Feed />
                 
 
             </div>
