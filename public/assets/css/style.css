@@ -3,7 +3,10 @@
 }
 
 body {
-  background-color: #FAFAFA;
+  /*
+  TODO - Adicionar background-color: #f5f5f5; 
+  */
+  background-color: rgb(146, 146, 255);
   margin: 54px 0 0;
   font-family: 'Roboto', sans-serif;
   color: #262626;
