@@ -29,12 +29,17 @@ const storys = [
 		image: "./assets/img/memeriagourmet.svg",
 		user: "memeriagourmet",
 	},
+	{
+		image: "./assets/img/meowed.svg",
+		user: "Meowed",
+	}
 ];
 
 export default function Stories() {
 	return (
 		<>
 			<div class="stories">
+				
 				{storys.map((story) => (
 					<Story image={story.image} user={story.user} />
 				))}

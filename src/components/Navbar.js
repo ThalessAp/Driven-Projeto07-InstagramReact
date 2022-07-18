@@ -21,15 +21,27 @@ export default function Navbar(){
 }
 
 function Logo(){
-  return(
-    <>
-      <div class="logo">
-        <IoLogoInstagram />
-        <div class="separador"></div>
-        <img src="./assets/img/logo.png" alt="logo"/>
-      </div>      
-    </>
-  )
+  return (
+		<>
+			<div class="logo">
+				<IoLogoInstagram />
+				<div class="separador"></div>
+				<img src="./assets/img/logo.png" alt="logo" />
+			</div>
+
+			<div class="logo-mobile">
+				<IoLogoInstagram />
+			</div>
+
+			<div class="instagram-mobile">
+				<img src="./assets/img/logo.png" alt="logo-mobile" />
+			</div>
+
+			<div class="icones-mobile">
+				<IoPaperPlaneOutline />
+			</div>
+		</>
+  );
 }
 
 function Searchbar(){

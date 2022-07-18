@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import {
 	IoHeartOutline,
@@ -89,7 +89,7 @@ function Conteudo(props) {
 
 function Fundo(props) {
 	const [liked, setLiked] = React.useState(false);
-	//let color = { liked ? " style={color: red} " : " style={{color: white}} " };
+	let color = {(liked) ? "{color:'red'}" : " {color: 'white'}" };
 
 	function handleLike() {
 		setLiked(!liked);
@@ -100,7 +100,7 @@ function Fundo(props) {
 			<div classs="fundo">
 				<div class="acoes">
 					<div>
-						<IoHeartOutline onClick={handleLike} />
+						<IoHeartOutline onClick={handleLike} style={color} />
 						<IoChatbubbleOutline />
 						<IoPaperPlaneOutline />
 					</div>
