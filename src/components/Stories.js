@@ -1,50 +1,49 @@
-import {IoChevronForwardCircleOutline} from 'react-icons/io5';
+import { IoChevronForwardCircleOutline } from "react-icons/io5";
 
 const storys = [
 	{
-		image: "./assets/img/meowed.svg",
+		image: "../../public/assets/img/gato-telefone.svg",
 		user: "Meowed",
 	},
 	{
-		image: "./assets/img/barked.svg",
+		image: "../../public/assets/img/barked.svg",
 		user: "Barked",
 	},
 	{
-		image: "./assets/img/nathanwpylestrangeplanet.svg",
+		image: "../../public/assets/img/nathanwpylestrangeplanet.svg",
 		user: "nathanwpylestrangeplanet",
 	},
 	{
-		image: "./assets/img/wawawicomics.svg",
+		image: "../../public/assets/img/wawawicomics.svg",
 		user: "wawawicomics",
 	},
 	{
-		image: "./assets/img/respondeai.svg",
+		image: "../../public/assets/img/respondeai.svg",
 		user: "respondeai",
 	},
 	{
-		image: "./assets/img/filomoderna.svg",
+		image: "../../public/assets/img/filomoderna.svg",
 		user: "filomoderna",
 	},
 	{
-		image: "./assets/img/memeriagourmet.svg",
+		image: "../../public/assets/img/memeriagourmet.svg",
 		user: "memeriagourmet",
 	},
 	{
-		image: "./assets/img/meowed.svg",
+		image: "../../public/assets/img/meowed.svg",
 		user: "Meowed",
-	}
+	},
 ];
 
 export default function Stories() {
 	return (
 		<>
-			<div class="stories">
-				
+			<div className="stories">
 				{storys.map((story) => (
 					<Story image={story.image} user={story.user} />
 				))}
 
-				<div class="setinha">
+				<div className="setinha">
 					<IoChevronForwardCircleOutline />
 				</div>
 			</div>
@@ -55,11 +54,11 @@ export default function Stories() {
 function Story(props) {
 	return (
 		<>
-			<div class="story">
-				<div class="imagem">
+			<div className="story">
+				<div className="imagem">
 					<img src="{props.image}" alt="imagem" />
 				</div>
-				<div class="usuario">{props.user}</div>
+				<div className="usuario">{props.user}</div>
 			</div>
 		</>
 	);

@@ -5,12 +5,12 @@ import Aside from "./Aside";
 export default function Feed() {
 	return (
 		<>
-			<div class="corpo">
-				<div class="esquerda">
+			<div className="corpo">
+				<div className="esquerda">
 					<Stories />
 					<Posts />
-                </div>
-                <Aside />
+				</div>
+				<Aside />
 			</div>
 		</>
 	);

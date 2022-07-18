@@ -1,7 +1,6 @@
 import ReactDOM from "react-dom";
 import App from './components/App';
 
-//TODO: Tirar o console.log
-console.log("aloo");
+console.log('Olá, mundo!');
 
 ReactDOM.render(<App />, document.querySelector(".root"));

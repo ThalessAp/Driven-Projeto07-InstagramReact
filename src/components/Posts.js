@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
 	IoHeartOutline,
 	IoChatbubbleOutline,
@@ -7,26 +6,27 @@ import {
 	IoEllipsisHorizontalSharp,
 } from "react-icons/io5";
 
+console.log("Posts.js");
 const postlist = [
 	{
-		userImage: "assets/img/meowed.svg",
+		userImage: "../../public/assets/img/meowed.svg",
 		userName: "meowed",
-		image: "assets/img/gato-telefone.svg",
-		likerImage: "assets/img/respondeai.svg",
+		image: "../../public/assets/img/gato-telefone.svg",
+		likerImage: "../../public/assets/img/respondeai.svg",
 		likerName: "respondeai",
 	},
 	{
-		userImage: "assets/img/barked.svg",
+		userImage: "../../public/assets/img/barked.svg",
 		userName: "barked",
-		image: "assets/img/dog.svg",
-		likerImage: "assets/img/adorable_animals.svg",
+		image: "../../public/assets/img/dog.svg",
+		likerImage: "../../public/assets/img/adorable_animals.svg",
 		likerName: "adorable_animals",
 	},
 	{
-		userImage: "assets/img/meowed.svg",
+		userImage: "../../public/assets/img/meowed.svg",
 		userName: "meowed",
-		image: "assets/img/gato-telefone.svg",
-		likerImage: "assets/img/respondeai.svg",
+		image: "../../public/assets/img/gato-telefone.svg",
+		likerImage: "../../public/assets/img/respondeai.svg",
 		likerName: "respondeai",
 	},
 ];
@@ -34,9 +34,9 @@ const postlist = [
 export default function Posts() {
 	return (
 		<>
-			<div class="posts">
+			<div className="posts">
 				{postlist.map((post) => (
-					<div class="post">
+					<div className="post">
 						<Post
 							userImage={post.userImage}
 							userName={post.userName}
@@ -64,12 +64,12 @@ function Post(props) {
 function Topo(props) {
 	return (
 		<>
-			<div class="topo">
-				<div class="usuario">
+			<div className="topo">
+				<div className="usuario">
 					<img src={props.userImage} alt="usuario" />
 					{props.userName}
 				</div>
-				<div class="acoes">
+				<div className="acoes">
 					<IoEllipsisHorizontalSharp />
 				</div>
 			</div>
@@ -80,7 +80,7 @@ function Topo(props) {
 function Conteudo(props) {
 	return (
 		<>
-			<div class="conteudo">
+			<div className="conteudo">
 				<img src={props.image} alt="post" />
 			</div>
 		</>
@@ -89,7 +89,12 @@ function Conteudo(props) {
 
 function Fundo(props) {
 	const [liked, setLiked] = React.useState(false);
-	let color = {(liked) ? "{color:'red'}" : " {color: 'white'}" };
+	let color;
+	if (liked) {
+		color = "color: 'red'";
+	} else {
+		color = "color: 'white'";
+	}
 
 	function handleLike() {
 		setLiked(!liked);
@@ -97,17 +102,17 @@ function Fundo(props) {
 
 	return (
 		<>
-			<div classs="fundo">
-				<div class="acoes">
+			<div classNames="fundo">
+				<div className="acoes">
 					<div>
 						<IoHeartOutline onClick={handleLike} style={color} />
 						<IoChatbubbleOutline />
 						<IoPaperPlaneOutline />
 					</div>
 				</div>
-				<div class="curtidas">
+				<div className="curtidas">
 					<img src={props.likerImage} alt="usuario" />
-					<div class="texto">
+					<div className="texto">
 						Curtido por <strong>{props.likerName}</strong> e{" "}
 						<strong> outras xx pessoinhas</strong>
 					</div>

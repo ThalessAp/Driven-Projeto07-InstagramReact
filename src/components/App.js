@@ -3,20 +3,18 @@ import Stories from "./Stories";
 import Feed from "./Feed";
 import Mobile from "./Mobile";
 
-
-function App(){
-    return(
-        <>
-            <Navbar />
-            <div class="corpo">
-                <Stories />
-                <Feed />         
-                
-            </div>
-                <Mobile />            
-
-        </>
-    )
+console.log("App.js");
+function App() {
+	return (
+		<>
+			<Navbar />
+			<div className="corpo">
+				<Stories />
+				<Feed />
+			</div>
+			<Mobile />
+		</>
+	);
 }
 
 export default App;

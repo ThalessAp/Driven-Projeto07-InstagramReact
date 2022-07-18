@@ -1,7 +1,7 @@
 export default function Aside() {
 	return (
 		<>
-			<div class="sidebar">
+			<div className="sidebar">
 				<User userImg="./assets/img/catanacomics.svg" />
 				<Sugestions />
 			</div>
@@ -12,9 +12,9 @@ export default function Aside() {
 function User(props) {
 	return (
 		<>
-			<div class="usuario">
+			<div className="usuario">
 				<img src={props.userImg} alt="usuario" />
-				<div class="texto">
+				<div className="texto">
 					<strong>catanacomics</strong>
 					Catana
 				</div>
@@ -54,8 +54,8 @@ function Sugestions() {
 
 	return (
 		<>
-			<div class="sugestoes">
-				<div class="titulo">
+			<div className="sugestoes">
+				<div className="titulo">
 					Sugestões para você
 					<div>Ver tudo</div>
 				</div>
@@ -68,11 +68,11 @@ function Sugestions() {
 					/>
 				))}
 			</div>
-			<div class="links">
+			<div className="links">
 				Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
 				Localizações • Contas mais relevantes • Hashtags • Idioma
 			</div>
-			<div class="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
+			<div className="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
 		</>
 	);
 }
@@ -80,15 +80,15 @@ function Sugestions() {
 function Suggestion(props) {
 	return (
 		<>
-			<div class="sugestao">
-				<div class="usuario">
+			<div className="sugestao">
+				<div className="usuario">
 					<img src={props.userImg} alt="usuario" />
-					<div class="texto">
-						<div class="nome">{props.userName}</div>
-						<div class="razao">{props.razao}</div>
+					<div className="texto">
+						<div className="nome">{props.userName}</div>
+						<div className="razao">{props.razao}</div>
 					</div>
 				</div>
-				<div class="seguir">Seguir</div>
+				<div className="seguir">Seguir</div>
 			</div>
 		</>
 	);

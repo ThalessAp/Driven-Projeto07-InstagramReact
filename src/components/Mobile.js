@@ -1,4 +1,3 @@
-
 import {
 	// IoLogoInstagram,
 	// IoPaperPlaneOutline,
@@ -12,7 +11,7 @@ import {
 export default function Mobile() {
 	return (
 		<>
-			<div class="navbar-mobile">
+			<div className="navbar-mobile">
 				{/* <Logo /> */}
 				<Footer />
 			</div>
@@ -23,15 +22,15 @@ export default function Mobile() {
 // function Logo() {
 // 	return (
 // 		<>
-// 			<div class="logo-mobile">
+// 			<div className="logo-mobile">
 // 				<IoLogoInstagram />
 // 			</div>
 
-// 			<div class="instagram-mobile">
+// 			<div className="instagram-mobile">
 // 				<img src="./assets/img/logo.png" alt="logo-mobile" />
 // 			</div>
 
-// 			<div class="icones-mobile">
+// 			<div className="icones-mobile">
 // 				<IoPaperPlaneOutline />
 // 			</div>
 // 		</>
@@ -41,7 +40,7 @@ export default function Mobile() {
 function Footer() {
 	return (
 		<>
-			<div class="fundo-mobile">
+			<div className="fundo-mobile">
 				<IoHome />
 				<IoSearch />
 				<IoAddCircleOutline />
