@@ -9,24 +9,24 @@ import {
 console.log("Posts.js");
 const postlist = [
 	{
-		userImage: "../../public/assets/img/meowed.svg",
+		userImage: "./assets/img/meowed.svg",
 		userName: "meowed",
-		image: "../../public/assets/img/gato-telefone.svg",
-		likerImage: "../../public/assets/img/respondeai.svg",
+		image: "./assets/img/gato-telefone.svg",
+		likerImage: "./assets/img/respondeai.svg",
 		likerName: "respondeai",
 	},
 	{
-		userImage: "../../public/assets/img/barked.svg",
+		userImage: "./assets/img/barked.svg",
 		userName: "barked",
-		image: "../../public/assets/img/dog.svg",
-		likerImage: "../../public/assets/img/adorable_animals.svg",
+		image: "./assets/img/dog.svg",
+		likerImage: "./assets/img/adorable_animals.svg",
 		likerName: "adorable_animals",
 	},
 	{
-		userImage: "../../public/assets/img/meowed.svg",
+		userImage: "./assets/img/meowed.svg",
 		userName: "meowed",
-		image: "../../public/assets/img/gato-telefone.svg",
-		likerImage: "../../public/assets/img/respondeai.svg",
+		image: "./assets/img/gato-telefone.svg",
+		likerImage: "./assets/img/respondeai.svg",
 		likerName: "respondeai",
 	},
 ];
@@ -89,11 +89,11 @@ function Conteudo(props) {
 
 function Fundo(props) {
 	const [liked, setLiked] = React.useState(false);
-	let color;
+	let color = {};
 	if (liked) {
-		color = "color: 'red'";
+		color = { color: 'red' };
 	} else {
-		color = "color: 'white'";
+		color = {color: 'black'};
 	}
 
 	function handleLike() {
